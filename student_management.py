@@ -25,9 +25,13 @@ def view_students():
     if not students:
         print("No students found.\n")
         return
+
+    print(f"Total Students: {len(students)}\n")
+
     for s in students:
         print(f"Name: {s['name']}, Roll: {s['roll']}")
     print()
+
 
 def search_student():
     roll = input("Enter roll number to search: ")
